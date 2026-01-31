@@ -1,0 +1,104 @@
+{
+  "colors": {
+    "background": {
+      "modal": "#FFFFFF",
+      "overlay": "rgba(0, 0, 0, 0.5)",
+      "alert-success": "#F0FFF4",
+      "icon-yellow": "#FFE69C",
+      "icon-green": "#A3F7BF"
+    },
+    "text": {
+      "primary": "#000000",
+      "secondary": "#6B7280",
+      "button-primary": "#FFFFFF"
+    },
+    "button": {
+      "primary-bg": "#000000",
+      "primary-hover": "#1F2937",
+      "secondary-bg": "#FFFFFF",
+      "secondary-border": "#000000",
+      "secondary-hover": "#F9FAFB",
+      "undo-bg": "#E5E7EB",
+      "undo-hover": "#D1D5DB"
+    },
+    "border": {
+      "default": "#E5E7EB",
+      "input": "#D1D5DB",
+      "button": "#000000"
+    },
+    "icon": {
+      "close": "#9CA3AF",
+      "checkmark": "#22C55E"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "base": "system-ui, -apple-system, 'Segoe UI', sans-serif"
+    },
+    "fontSize": {
+      "alert-message": "16px",
+      "popup-title": "24px",
+      "popup-description": "16px",
+      "modal-title": "28px",
+      "modal-description": "16px",
+      "button": "16px"
+    },
+    "fontWeight": {
+      "title": "700",
+      "description": "400",
+      "button": "500"
+    },
+    "lineHeight": {
+      "tight": "1.2",
+      "normal": "1.5",
+      "relaxed": "1.625"
+    }
+  },
+  "spacing": {
+    "alert": {
+      "padding": "16px 20px",
+      "gap": "12px",
+      "icon-size": "48px"
+    },
+    "popup": {
+      "padding": "32px",
+      "gap": "16px",
+      "icon-size": "64px"
+    },
+    "modal": {
+      "padding": "40px",
+      "gap": "24px",
+      "max-width": "640px"
+    },
+    "button": {
+      "padding": "12px 24px",
+      "gap": "8px"
+    }
+  },
+  "borderRadius": {
+    "alert": "16px",
+    "popup": "24px",
+    "modal": "24px",
+    "button": "12px",
+    "button-full": "9999px",
+    "input": "12px",
+    "icon": "12px",
+    "image": "16px"
+  },
+  "shadows": {
+    "modal": "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+    "alert": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)"
+  },
+  "animation": {
+    "duration": {
+      "fast": "150ms",
+      "normal": "200ms",
+      "slow": "300ms"
+    },
+    "easing": {
+      "default": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "in": "cubic-bezier(0.4, 0, 1, 1)",
+      "out": "cubic-bezier(0, 0, 0.2, 1)"
+    }
+  }
+}

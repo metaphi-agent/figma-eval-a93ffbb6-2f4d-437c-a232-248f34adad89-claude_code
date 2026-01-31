@@ -1,67 +1,96 @@
 # Modals, Popups & Alerts
 
-A comprehensive collection of 20+ modal and alert UI components converted from Figma to production-ready React code.
+A comprehensive collection of 20+ interactive modal, popup, and alert components built from Figma designs.
 
-## 🎨 Design
+## 🎨 Features
 
-This project is based on the [20 Modals, Popups, Alerts](https://www.figma.com/design/7p0W7KllTYkpKRLDHgqFhD/20-Modals--Popups--Alerts--Community-) Figma community file.
+- **Alerts**: Success notifications with various actions (close, undo, learn more)
+- **Popups**: Confirmation dialogs with password inputs and scrollable content
+- **Modals**: Full-featured dialogs with hero images, forms, and checkboxes
 
-## 🚀 Features
+## 🚀 Live Demo
 
-- **21 Component Variants** - Comprehensive collection of alerts, popups, and modals
-- **Production Ready** - Built with React + TypeScript + Tailwind CSS v4
-- **Fully Interactive** - All states and interactions implemented
-- **Accessible** - Keyboard navigation and ARIA labels
-- **Responsive** - Works on all screen sizes
+Preview: [View Demo](https://ta-01kg9ehzzrrayx11d5n8a0nqee-5173.wo-slp928iezm9rzj4e4e9m2mx78.w.modal.host)
 
 ## 📦 Components
 
 ### Alerts
-- Success/warning/info variants
-- With and without icons
-- Undo functionality
-- Auto-dismiss with timer
+- Success with close button
+- Success with undo action
+- Success with learn more link
 
 ### Popups
-- Confirmation dialogs
-- Password verification
-- Terms and agreements
+- Accept changes confirmation
+- Identity verification with password input
+- Terms and agreements with scrollable content
+- Deactivation warning
+- Order placed success
+- Project success notification
 
 ### Modals
-- Deactivation confirmation
-- Order success
-- Newsletter subscription
-- Image-enhanced modals
-- Checkbox interactions
+- Accept confirmation
+- Modal with remember choice checkbox
+- Modal with hero image
+- Newsletter subscription form
 
-## 🛠️ Tech Stack
+## 🛠️ Built With
 
-- React 19
-- TypeScript
-- Tailwind CSS v4
-- Vite
+- **React** - UI library
+- **TypeScript** - Type safety
+- **Tailwind CSS v4** - Styling
+- **Vite** - Build tool
 
-## 📱 Live Preview
+## 🎯 Figma Design
 
-[View Live Demo](https://ta-01kg6svx5kzw2em14hzt5ce3f4-5173.wo-3u8xxk8nfl4wda3whbc7gtgl9.w.modal.host)
+Original Figma file: [20 Modals, Popups, Alerts](https://www.figma.com/design/7p0W7KllTYkpKRLDHgqFhD/20-Modals--Popups--Alerts--Community-)
 
-## 🏗️ Development
+## 📝 Usage
 
-\`\`\`bash
-# Install dependencies
+```tsx
+import { Alert, Popup, Modal } from './components';
+
+// Alert
+<Alert
+  icon="✓"
+  title="Changes applied successfully!"
+  onClose={() => setShowAlert(false)}
+  variant="success"
+/>
+
+// Popup
+<Popup
+  isOpen={isOpen}
+  onClose={() => setIsOpen(false)}
+  icon="🤔"
+  title="Accept changes?"
+  description="Your description here"
+  primaryAction={{ label: 'Accept', onClick: handleAccept }}
+  secondaryAction={{ label: 'Reject', onClick: handleReject }}
+/>
+
+// Modal
+<Modal
+  isOpen={isOpen}
+  onClose={() => setIsOpen(false)}
+  title="Do you want to accept?"
+  description="Accepting it will open a pandora's box."
+  showCheckbox
+  primaryAction={{ label: 'Accept changes', onClick: handleAccept }}
+  secondaryAction={{ label: 'Reject', onClick: handleReject }}
+/>
+```
+
+## 🏃 Development
+
+```bash
 npm install
-
-# Start development server
 npm run dev
+```
 
-# Build for production
-npm run build
-\`\`\`
+## 📄 License
 
-## 📝 License
-
-Free for commercial and personal use. No attribution required.
+Free for commercial & personal use. No attribution required.
 
 ---
 
-**Generated with Claude Code** from Figma design.
+Generated with Claude Code from Figma design.
