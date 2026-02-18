@@ -1,4 +1,8 @@
-node_modules
-dist
+node_modules/
+dist/
 .DS_Store
-*.local
+*.log
+.env
+.env.local
+preview_screenshots/
+figma_exports/
