@@ -196,7 +196,7 @@ export default function App() {
             <AcceptImageModal
               title="Do you want to accept?"
               description="Accepting it will open a pandora's box."
-              imageSrc="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&auto=format&fit=crop&q=60"
+              imageSrc="./assets/images/landscape-image.png"
               onReject={() => console.log('Reject')}
               onAccept={() => console.log('Accept')}
               onClose={() => console.log('Close')}
@@ -217,7 +217,7 @@ export default function App() {
             <NewsletterImageModal
               title="Subscribe to our Newsletter"
               description="Join thousands getting emails in their inbox."
-              imageSrc="https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&auto=format&fit=crop&q=60"
+              imageSrc="./assets/images/newsletter-image.png"
               onSubscribe={(email) => console.log('Subscribe:', email)}
               onClose={() => console.log('Close')}
             />
